@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Educational RC</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@350;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <section id="loading" class="d-flex justify-content-center align-items-center ">
+        <img src="images/Preloader_2.gif" alt="loading image">
+    </section>
+
+    <section class=" main ">
+       <div id="box" class=" box ">
+           <!-- question title section -->
+        <div class="ques-title px-3 mb-3  pt-4 d-flex justify-content-between">
+            <h1 >What's in the basket? Choose and write.</h1>
+            <div class="menue  ">
+                <img id="resource" src="images/resourse_icon.png" class="mr-4 icon " alt="images icon">
+                <img id="help" src="images/help_icon.png" alt="help icon" class="icon">
+            </div>
+        </div>
+
+        <!-- popup section -->
+        <div class="pop-up d-none">
+            <div id="help-popup" class="help d-none justify-content-between pl-4 pr-2 pb-4 pt-2 position-relative">
+                <h5 class="pt-3">Help content goes here.</h5>
+                <img  src="images/close_icon.png"  class="icon close-icon" alt="">
+            </div>
+            <div id="resource-popup" class="resourses position-relative d-none">
+                <img  src="images/close_icon.png" class="icon close-icon  " alt="">
+                <div class="overflow-auto border "><img  src="images/dummy.jpg" class=" dummy " alt=""></div>
+            </div>
+        </div>
+
+        <!-- question section -->
+        <div class="ques-container">
+            <div class="ques-card ">
+                <!-- choose section -->
+                <div class="ques text-center">
+                    <span class="ans1" answer-data="wrong">scissors</span>
+                    <span answer-data="correct">eraser</span>
+                    <span answer-data="correct">ruler</span>
+                    <span answer-data="wrong">bag</span>
+                    <br>
+                    <span answer-data="wrong">pencil case</span>
+                    <span answer-data="correct">pencil</span>
+                    <span answer-data="correct">book</span>
+                    <span answer-data="correct">pen</span>
+                </div>
+                
+                <!-- answer section -->
+                <div class="ans-container position-relative">
+                    <img class="ques-img" src="images/p15e11.png" width="100%"  alt="pencil case content inside market car">
+                    <div class="answers w-100 d-flex align-items-end">
+                        <div class="ans-options col-4">
+                            <div class="answer px-4"></div>
+                            <div class="answer px-4"></div>
+                        </div>
+                        <div class="ans-options col-4 pl-4">
+                            <div class="answer px-4"></div>
+                        </div>
+                        <div class="ans-options col-4 pl-5">
+                            <div class="answer px-3"></div>
+                            <div class="answer px-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- controller section -->
+        <footer>
+            <div class="controlers d-flex  ">
+                <img id="replay" src="images/replay_icon.png" class="icon1" alt="replay icon">
+                <img id="showAns" src="images/showAns_icon.png" class="icon2" alt="eye icon">
+            </div>
+        </footer>
+       </div>
+       <audio  id="audio"></audio>
+    </section>
+    
+
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

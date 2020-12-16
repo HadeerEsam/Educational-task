@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    color: #000;
+    user-select: none;
+}
+body{
+    overflow: hidden;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#loading{
+    position: fixed;
+    z-index: 90000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: 1;
+    transition: all 5s ease-in-out;
+    -webkit-transition:  all 0.5s ease-in-out;
+    -o-transition:  all 0.5s ease-in-out;
+    -moz-transition:  all 0.5s ease-in-out;
+    -ms-transition:  all 0.5s ease-in-out;
+}
+
+.main{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    height: 60pc;
+    width: 80pc;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition:  all 0.5s ease-in-out;
+    -o-transition:  all 0.5s ease-in-out;
+    -moz-transition:  all 0.5s ease-in-out;
+    -ms-transition:  all 0.5s ease-in-out;
+    top: 0;
+    transform-origin: top left;
+    -webkit-transform-origin:top left ;
+    -o-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+   
+}
+/*start of question title section */
+.ques-title{
+    height: 6.8pc;
+}
+h1{
+    font-size:2rem;
+    line-height: 50px;
+}
+.icon{
+    cursor: pointer;
+    max-width: 70px;
+}
+/*end of  question title section */
+
+/*start of question section 
+start of choose section */
+
+.ques-container{
+    border-right: 25px solid #0fa0c5;
+    border-left: 25px solid #0fa0c5;
+    position: relative;
+    height: 45pc;
+    width: 100%;
+}
+.ques-card {
+    position: absolute;
+    top: -1pc;
+    left: 0px;
+    background-color: white;
+    border:.3125pc #f5821f solid;
+    border-radius: 20px;
+    height: 47pc;
+    padding: 30px 0;
+}
+span{
+    margin:0 .15625in .15625in 0;
+    padding: 0.1pc 1pc ;
+    border: #0fa0c5  1.7989pt solid;
+    border-radius: .188in;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 71px;
+}
+.selected{
+    color: white;
+    background-color: #0fa0c5;
+}
+.disabled{
+    opacity: 0.5;
+}
+/*end of choose section */
+
+/*start of answer section */
+.ques-img{
+    border-radius: 18px;
+    height:32.8pc;  
+}
+.answers{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+.answer{
+    height:6pc;
+    cursor: pointer;
+    padding: 0.5pc 0 ;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height:80px;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition:  all 0.5s ease-in-out;
+    -o-transition:  all 0.5s ease-in-out;
+    -moz-transition:  all 0.5s ease-in-out;
+    -ms-transition:  all 0.5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+}
+.mark{
+    width: 45px;
+    transform: rotate(9deg);
+    vertical-align: middle;
+}
+
+/*end of answer section 
+end of question section */
+
+/* start of controller section */
+footer{
+    
+    background: #deecf6;
+    padding: 30px 25px;
+    align-items: center;
+}
+footer .icon1{
+    max-width: 80px;
+    margin-right: 670px;
+    cursor: pointer;
+}
+footer .icon2{
+    max-width: 100px;
+    cursor: pointer;
+}
+/* end of controller section */
+
+/* strat of pop up section */
+.pop-up{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.384);
+    z-index: 3333;
+    padding: 110px 7px 0;
+    height: 60pc;
+    width: 80pc;
+}
+.help, .resourses{
+    margin: auto;
+    border:.052083333in #f5821f solid;
+    border-radius: 20px;
+    height: 47pc;
+    width: 77pc;
+    transition: all 500ms ease-in-out;
+    -webkit-transition:  all 0.5s ease-in-out;
+    -o-transition:  all 0.5s ease-in-out;
+    -moz-transition:  all 0.5s ease-in-out;
+    -ms-transition:  all 0.5s ease-in-out;
+    overflow: hidden;
+   background-color: white;
+
+}
+.close-icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.dummy{
+    border-radius: 20px;
+}
+/* end of pop up section */
+
+
